@@ -62,7 +62,7 @@ namespace THNETII.AzureAcs.Client.Metadata
             if (parameters is null)
                 return;
 
-            parameters.ValidateAudience = true;
+            parameters.ValidateAudience = AllowedAudiences.Count > 0;
             parameters.ValidAudiences = AllowedAudiences;
             parameters.IgnoreTrailingSlashWhenValidatingAudience = true;
         }
@@ -73,9 +73,10 @@ namespace THNETII.AzureAcs.Client.Metadata
             if (parameters is null)
                 return;
 
-            parameters.ValidateIssuerSigningKey = true;
+            var signingKeys = GetSecurityKeys().ToList();
+            parameters.ValidateIssuerSigningKey = signingKeys.Count > 0;
             parameters.IssuerSigningKey = null;
-            parameters.IssuerSigningKeys = GetSecurityKeys().ToList();
+            parameters.IssuerSigningKeys = signingKeys;
         }
     }
 }
