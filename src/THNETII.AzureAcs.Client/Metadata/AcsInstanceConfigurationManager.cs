@@ -37,7 +37,7 @@ namespace THNETII.AzureAcs.Client.Metadata
         {
             instance ??= AcsDefaults.Instance;
             const string slash = "/";
-            const string metadataPath = AcsDefaults.MetadataAddress + "?realm=";
+            const string metadataPath = AcsDefaults.MetadataPath + "?realm=";
             realm = Uri.EscapeDataString(realm ?? string.Empty);
             if (instance.AsSpan().EndsWith(slash.AsSpan(), StringComparison.Ordinal))
                 return instance + metadataPath + realm;
