@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{22277D45-C5AF-4591-8777-9C782D047302}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,9 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A4FF9D7-229D-40ED-BCAA-E816284A38D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.AzureAcs.Client", "src\THNETII.AzureAcs.Client\THNETII.AzureAcs.Client.csproj", "{A29F384A-1296-4812-BFD7-DF8BF2E69D5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.AzureAcs.Client", "src\THNETII.AzureAcs.Client\THNETII.AzureAcs.Client.csproj", "{A29F384A-1296-4812-BFD7-DF8BF2E69D5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.AzureAcs.Client.HostingExtensions", "src\THNETII.AzureAcs.Client.HostingExtensions\THNETII.AzureAcs.Client.HostingExtensions.csproj", "{C1517419-733E-4A9D-ADCB-2772A5F60315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.AzureAcs.Client.HostingExtensions", "src\THNETII.AzureAcs.Client.HostingExtensions\THNETII.AzureAcs.Client.HostingExtensions.csproj", "{C1517419-733E-4A9D-ADCB-2772A5F60315}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.AzureCore.Diagnostics.LoggingExtensions", "src\THNETII.AzureCore.Diagnostics.LoggingExtensions\THNETII.AzureCore.Diagnostics.LoggingExtensions.csproj", "{C35C147A-311F-4AD6-B003-BE0B1192EA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.AzureCore.Diagnostics.LoggingExtensions.AspNetCore", "src\THNETII.AzureCore.Diagnostics.LoggingExtensions.AspNetCore\THNETII.AzureCore.Diagnostics.LoggingExtensions.AspNetCore.csproj", "{8897ABD1-7CC0-4D1C-9583-893984C0E36B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,12 +32,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {25139966-2DF9-4FFE-8A0E-C95DFA72438D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A29F384A-1296-4812-BFD7-DF8BF2E69D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -60,9 +58,41 @@ Global
 		{C1517419-733E-4A9D-ADCB-2772A5F60315}.Release|x64.Build.0 = Release|Any CPU
 		{C1517419-733E-4A9D-ADCB-2772A5F60315}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1517419-733E-4A9D-ADCB-2772A5F60315}.Release|x86.Build.0 = Release|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Debug|x64.Build.0 = Debug|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Debug|x86.Build.0 = Debug|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Release|x64.ActiveCfg = Release|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Release|x64.Build.0 = Release|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Release|x86.ActiveCfg = Release|Any CPU
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60}.Release|x86.Build.0 = Release|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Debug|x64.Build.0 = Debug|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Debug|x86.Build.0 = Debug|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Release|x64.ActiveCfg = Release|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Release|x64.Build.0 = Release|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A29F384A-1296-4812-BFD7-DF8BF2E69D5C} = {9A4FF9D7-229D-40ED-BCAA-E816284A38D3}
 		{C1517419-733E-4A9D-ADCB-2772A5F60315} = {9A4FF9D7-229D-40ED-BCAA-E816284A38D3}
+		{C35C147A-311F-4AD6-B003-BE0B1192EA60} = {9A4FF9D7-229D-40ED-BCAA-E816284A38D3}
+		{8897ABD1-7CC0-4D1C-9583-893984C0E36B} = {9A4FF9D7-229D-40ED-BCAA-E816284A38D3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25139966-2DF9-4FFE-8A0E-C95DFA72438D}
 	EndGlobalSection
 EndGlobal
